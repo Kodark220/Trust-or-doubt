@@ -17,6 +17,8 @@ Open `http://localhost:3000` and start from the landing page — enter a usernam
 
 ## Contract integration toggle
 
+- The intelligent contract is deployed at `0x93852c3720EE2316a56A3618b7637B2b18ca6cd7`. Set `NEXT_PUBLIC_GENLAYER_CONTRACT_ADDRESS` (or use the hard-coded fallback) and `NEXT_PUBLIC_GENLAYER_CONSENSUS=contract` whenever you want the front end to call the on-chain verdicts instead of the mock helpers.
+
 By default the game uses the mocked AI consensus helpers in `utils/mockAI.ts`. When the GenLayer contract is ready (even on testnet) you can flip the flag to have the game route through the real contract:
 
 1. Provide the ABI + RPC details in a new module (e.g., extend `utils/genlayerClient.ts`).
