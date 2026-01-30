@@ -1,5 +1,5 @@
 # runner: python3
-# { "depends": "py-genlayer:test" }
+# { "Depends": "py-genlayer:test" }
 import gl
 from typing import Dict, List, Optional, Any
 
