@@ -11,6 +11,10 @@ npm run dev
 
 Open `http://localhost:3000` and start from the landing page — enter a username, choose single/multiplayer, and jump into the claim rounds.
 
+## Gameplay randomness & contract integration
+
+- Scenarios are seeded with the current session (`${username}-${mode}` plus a random suffix), so even if multiple people reuse the same handle, each playthrough shuffles a fresh queue of claims.
+
 ## Contract integration toggle
 
 By default the game uses the mocked AI consensus helpers in `utils/mockAI.ts`. When the GenLayer contract is ready (even on testnet) you can flip the flag to have the game route through the real contract:
